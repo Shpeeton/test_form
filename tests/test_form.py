@@ -34,3 +34,4 @@ def test_unsuccessful_login(driver):
     login_button.click()
     error_message = driver.find_element("id", "flash")
     assert "Your username is invalid!" in error_message.text
+    
